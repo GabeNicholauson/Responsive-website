@@ -94,35 +94,22 @@ a {
     color: #fff;
 }
 
-@media (min-width: 480px) {
-
-    .row {
-        flex-flow: row wrap;
-    }
-
+@media screen and (min-width: 413px) {
     .column {
         width: 100%;
     }
-}
-
-@media (min-width: 768px) {
 
     .row {
         flex-flow: row wrap;
     }
+}
 
+@media screen and (min-width: 820px) {
     .column {
         width: calc(50% - 10px);
     }
-}
-
-@media (min-width: 1280px) {
 
     .row {
         flex-flow: row wrap;
-    }
-
-    .column {
-        width: calc(25% - 15px);
     }
 }
