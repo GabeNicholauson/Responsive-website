@@ -24,6 +24,7 @@ body {
 
 header {
     border: var(--app-border);
+    min-width: 100vh;
 }
 
 .nav {
@@ -63,7 +64,7 @@ ul li + li {
 /*-----------------------------------------*/
 
 .row {
-    width: 100%;
+    min-width: 100vh;
     margin-top: 50px;
     gap: 20px;
 }
