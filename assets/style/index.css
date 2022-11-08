@@ -1,0 +1,117 @@
+@import "./reset.css";
+
+:root {
+    --app-purple: #d26be4;
+    --app-border: 1px solid rgb(0 0 0 / 0.2);
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: #f2f3f4;
+}
+
+/*-----------------------------------------*/
+/*  Header                                 */
+/*-----------------------------------------*/
+
+header {
+    border: var(--app-border);
+}
+
+.nav {
+    height: 50px;
+    align-items: center;
+}
+
+ul {
+    margin-left: auto;
+    align-items: right;
+    list-style: none;
+}
+
+ul li + li {
+    margin-left: 10px;
+}
+
+/*-----------------------------------------*/
+/*  Title                                  */
+/*-----------------------------------------*/
+
+.title {
+    background-color: #53add4;
+}
+
+.title div {
+    height: 400px;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+/*-----------------------------------------*/
+/*  Boxes                                  */
+/*-----------------------------------------*/
+
+.row {
+    width: 100%;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(25% - 15px);
+    height: 300px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 0.3);
+}
+
+a {
+    width: 100px;
+    height: 40px;
+}
+
+.read-more {
+    border: 1px solid var(--app-purple);
+    background-color: var(--app-purple);
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    .row {
+        flex-flow: row wrap;
+    }
+
+    .column {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .row {
+        flex-flow: row wrap;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
