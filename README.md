@@ -1,1 +1,1 @@
-click Click [here](https://gabenicholauson.github.io/Responsive-website/) to test the page
+Click [here](https://gabenicholauson.github.io/Responsive-website/) to test the page
