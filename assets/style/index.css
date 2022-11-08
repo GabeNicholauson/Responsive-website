@@ -94,7 +94,7 @@ a {
     color: #fff;
 }
 
-@media screen and (min-width: 413px) {
+@media screen and (min-width: 300px) {
     .column {
         width: 100%;
     }
